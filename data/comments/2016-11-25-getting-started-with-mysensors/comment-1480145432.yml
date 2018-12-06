@@ -1,0 +1,16 @@
+﻿id: 159
+replyTo: 157
+name: Rogier Reedijk
+email: 7F2A9FD369018735070D34C0331FE9C5
+body: >-
+  Looks like a very nice board!
+
+  MySensors seems to support the RFM69 radios:
+
+  https://www.mysensors.org/build/connect_radio
+
+
+  But I haven't tried this myself.
+
+  MyNodes.NET doesn't care which radio you use, as long as it has a gateway it can talk to.
+date: 2016-11-26T08:30:32.0000000+01:00

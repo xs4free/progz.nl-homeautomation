@@ -1,0 +1,24 @@
+﻿id: 3
+replyTo: 2
+name: rogier
+email: 7F2A9FD369018735070D34C0331FE9C5
+body: >-
+  Hi Bogy,
+
+  Thanks for the tip on Debian. It looks like Igor is really supporting his Debian build. I might just switch to his image.
+
+
+  The process is going slowly (mainly because I don't have enough free time).
+
+  Currently I'm trying to connect the NRF24 module directly to the Cubietruck. I've found a NodeJS library that talk directly to the NRF24 module and prefer that to adding another arduino and a serial connection. But if the library doesn't work I will also be using an Arduino and a serial connection.
+
+
+  What type of sensor are you planning on using? And where will you be storing the data?
+
+  I've got lots of ideas, now I just need more free time to implement/build them! :)
+
+
+  I will sent you an email to see if we can share code/ideas in the future!
+
+  Thanks for your reply.
+date: 2014-07-11T06:57:40.0000000+02:00

@@ -1,0 +1,26 @@
+﻿id: 2
+replyTo: 0
+name: Bogy
+email: 463B2F9B25B435BF3B78EE5647698152
+body: >-
+  Hello,
+
+
+  I am also working an a home automation project using cubietruck and nrf24l01 modules.
+
+
+  I advise you to install debian on the cubie instead of lubuntu.
+
+  Here is the link to a russina guy that made a killer distro for cubie.
+
+  http://www.igorpecovnik.com/2013/12/24/cubietruck-debian-wheezy-sd-card-image/
+
+
+  How`s the progress going ..mine is preety slow as i am trying to simulate an mqtt server(publish/subscriber based) in python. I will have a master arduino which gateways all nrf messages from sensors and such to a serial on the cubie.
+
+
+  Maybe we can share some ideas... my mail is bogyxp on Y!
+
+
+  Best of luck!
+date: 2014-07-08T13:53:08.0000000+02:00

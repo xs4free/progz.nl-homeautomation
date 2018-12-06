@@ -1,0 +1,6 @@
+﻿id: 160
+replyTo: 158
+name: Rogier Reedijk
+email: 7F2A9FD369018735070D34C0331FE9C5
+body: "I did know the NRF24L01+ has support for multiple pipes (on the same channel). The MySensors-library I'm using abstracts this away for me. Currently the library is using 2 pipes (as of release 2.0) for listening, one for broadcasts and one for direct communication.\nThe MySensors library supports 254 nodes on a single channel, as long as the sensors aren't all transmitting at the same time. Since room temperature and humidity is a slow changing process, transmitting once every 5 to 10 minutes should be enough. And when 2 nodes still want to transmit at the same time, they have the ability to ask for an acknowledgment from the controller, so they know when they need to retransmit their data. \nThis is exactly why I'm currently using this library, someone has actually thought of and solved these problems!"
+date: 2016-11-27T16:35:00.0000000+01:00
