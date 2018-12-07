@@ -1,61 +1,74 @@
-baseurl = "https://www.progz.nl/blog"
-title = "Rogiers blog"
-theme = "hugo-coder"
+baseurl = "https://www.progz.nl/"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
-paginate = 20
-canonifyurls = true
+title = "Rogier's blog"
+#theme = "hugo-coder"
+theme = "hyde-hyde"
 
-pygmentsstyle = "bw"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+## Hugo Built-in Features
+# disqusShortname = "your-disqus-shortname"
+# googleAnalytics = "your-google-analytics-id"
+# enableRobotsTXT = true
 
-disqusShortname = "yourdiscussshortname"
+# summarylength = 30
+
+#paginate = 5
+
+# canonifyurls = true
 
 [params]
     author = "Rogier Reedijk"
     info = "Full Stack .NET developer"
     description = "Rogier Reedijk's personal website"
-    keywords = "blog,developer,personal,home-automation"
-    avatarurl = "images/avatar.jpg"
+    authorimage = "/img/Rogier-Reedijk.jpg"
+    dateformat = "Jan 2, 2006"
 
-    favicon_32 = "/img/favicon-32x32.png"
-    favicon_16 = "/img/favicon-16x16.png"
+    # sidebar, copyright & license
+    copyright = "Rogier Reedijk"
+    license = "CC BY-SA 4.0"
+    licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+    showBuiltWith = true
 
-    footercontent = "Enter a text here."
+    # https://highlightjs.org
+    highlightjs = true
+    highlightjsstyle = "github"
+    
+    # please choose either GraphComment or Disqus or Utterances
+    #GraphCommentId = "..."
+    #UtterancesRepo = "..." # https://utteranc.es/
+    #UtterancesIssueTerm = "..." # pathname, url, title, og:title
+    #UtterancesTheme = "..." # github-light or github-dark
 
-    hidecredits = false
-    hidecopyright = false
+    # Table of contents
+    #toc = none, "hugo", or "tocbot"
 
-    rtl = false
+## Social Accounts
+[params.social]
+    github = "xs4free"
+    #instagram = "<username>"
+    #xing = "<username>"
+    linkedin = "rogierreedijk"
+    twitter = "xs4free"
+    facebook = "rogier.reedijk"
+    #stackoverflow = "<username>"
+    #telegram = "<username>"
+    #email = "home-automation@progz.nl"
+    # gravatar = "your-email@example.com"
 
-    math = true
-    custom_css = ["css/custom.css"]
-
-# Social links
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github fa-2x"
-    weight = 1
-    url = "https://github.com/johndoe/"
-[[params.social]]
-    name = "Gitlab"
-    icon = "fab fa-gitlab fa-2x"
-    weight = 2
-    url = "https://gitlab.com/johndoe/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter fa-2x"
-    weight = 3
-    url = "https://twitter.com/johndoe/"
-
-# Menu links
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts/"
+## Main Menu
+# [[menu.main]]
+#     name = "Posts"
+#     weight = 100
+#     identifier = "posts"
+#     url = "/posts/"
+# [[menu.main]]
+#     name = "Portfolio"
+#     identifier = "portfolio"
+#     weight = 200
+#     url = "/portfolio/"
 [[menu.main]]
     name = "About"
-    weight = 2
+    identifier = "about"
+    weight = 300
     url = "/about/"
