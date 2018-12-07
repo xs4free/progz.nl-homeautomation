@@ -3,7 +3,6 @@ languagecode = "en"
 defaultcontentlanguage = "en"
 
 title = "Rogier's blog"
-#theme = "hugo-coder"
 theme = "hyde-hyde"
 
 ## Hugo Built-in Features
@@ -20,9 +19,10 @@ theme = "hyde-hyde"
 [params]
     author = "Rogier Reedijk"
     info = "Full Stack .NET developer"
-    description = "Rogier Reedijk's personal website"
+    #description = "Rogier Reedijk's personal website"
     authorimage = "/img/Rogier-Reedijk.jpg"
     dateformat = "Jan 2, 2006"
+    themeColor = "theme-progz"
 
     # sidebar, copyright & license
     copyright = "Rogier Reedijk"
@@ -42,6 +42,8 @@ theme = "hyde-hyde"
 
     # Table of contents
     #toc = none, "hugo", or "tocbot"
+    postNavigation = true
+    relatedPosts = false #look at enabling includeNewer first: https://gohugo.io/content-management/related
 
 ## Social Accounts
 [params.social]
