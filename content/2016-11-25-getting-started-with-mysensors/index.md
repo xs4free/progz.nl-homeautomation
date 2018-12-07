@@ -15,7 +15,7 @@ resources:
 - src: MyNodesNET-first-node.png
   title: MyNodes.NET humidity node
 aliases:
-- index.php/2016/11/25/getting-started-with-mysensors/
+- index.php/2016/11/getting-started-with-mysensors/
 ---
 For a long time I have been following the website/project [MySensors.org](https://www.mysensors.org/). I've been thinking about building a temperature and humidity sensor-network in my house for a long time and this project seems to have figured out all the hard stuff (radio communication, low-power battery sensors, network gateway and even controllers).
 

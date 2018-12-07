@@ -10,7 +10,7 @@ categories:
 tags: []
 resources: []
 aliases:
-- index.php/2014/04/27/home-automation-getting-started/
+- index.php/2014/04/home-automation-getting-started/
 ---
 After following the [blog of Robert Hekkers](http://blog.hekkers.net/) for almost a year now, and reading a few other blogs on the subject of home-automation, I’ve decided to start building a home-automation system myself. I’ve come up with a rather long list of things I would like to automate/monitor:
 
