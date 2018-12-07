@@ -1,4 +1,4 @@
-baseurl = "https://www.progz.nl/"
+baseurl = "https://www.progz.nl/blog"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
@@ -34,11 +34,12 @@ theme = "hyde-hyde"
     highlightjs = true
     highlightjsstyle = "github"
     
-    # please choose either GraphComment or Disqus or Utterances
+    # please choose either GraphComment or Disqus or Utterances or Staticman
     #GraphCommentId = "..."
     #UtterancesRepo = "..." # https://utteranc.es/
     #UtterancesIssueTerm = "..." # pathname, url, title, og:title
     #UtterancesTheme = "..." # github-light or github-dark
+    enableStaticmanComments = true
 
     # Table of contents
     #toc = none, "hugo", or "tocbot"
