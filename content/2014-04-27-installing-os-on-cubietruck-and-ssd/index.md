@@ -44,43 +44,30 @@ When I logged back into the Cubietruck I saw that the Lubuntu version was out-da
 To upgrade it to the latest version I used the following commands (found at a blog called [How to install Lubuntu Server on Cubietruck from Mac OS X](http://dyhr.com/2013/11/22/how-to-install-lubuntu-server-on-cubietruck-from-mac-os-x/)):
 
 
-*   # apt-get update; apt-get upgrade
-*   # apt-get install python-apt
-*   # do-release-upgrade
-The last command took about a half hour to complete. Then I finished the rest of the customizations steps, mainly:
-
-
-*   Adjusting time-zone
-#rm /etc/localtime
-#ln -s /user/share/zoneinfo/Europe/Amsterdam /etc/localtime
-#nano /etc/timezone
+* `# apt-get update; apt-get upgrade`
+* `# apt-get install python-apt`
+* `# do-release-upgrade`  
+  The last command took about a half hour to complete. Then I finished the rest of the customizations steps, mainly:
+* Adjusting time-zone  
+`#rm /etc/localtime`  
+`#ln -s /user/share/zoneinfo/Europe/Amsterdam /etc/localtime`  
+`#nano /etc/timezone`  
 Changed to “Europe/Amsterdam”
+* Adding a new user  
+`#adduser <username>`  
+`#sudo adduser <username> sudo`  
+`#sudo usermod -a -G sudo <username>`  
+* Removing the default linaro user  
+`#sudo userdel -r linaro`
+* Disable apache auto-start (I will be using Node.js instead)  
+`#sudo update-rc.d -f apache2 remove`
+* Install Node.js and it’s package manager NPM  
+`#apt-get install nodejs`  
+`#apt-get install npm`
+* Install monit  
+`#apt-get install monit`
+* Install aptitude and ntp  
+`#apt-get install aptitude`  
+`#apt-get install ntp`
 
-
-*   Adding a new user
-#adduser <username>
-#sudo adduser <username> sudo
-#sudo usermod -a -G sudo <username>
-
-
-*   Removing the default linaro user
-#sudo userdel -r linaro
-
-
-*   Disable apache auto-start (I will be using Node.js instead)
-#sudo update-rc.d -f apache2 remove
-
-
-*   Install Node.js and it’s package manager NPM
-#apt-get install nodejs
-#apt-get install npm
-
-
-*   Install monit
-#apt-get install monit
-
-
-*   Install aptitude and ntp
-#apt-get install aptitude
-#apt-get install ntp
 The final step will be to place the Cubietruck in the [Ewell case](http://cubieboard.org/2014/02/27/ewell-has-come-minipc-not-be-far-behind/) but first I must figure out how to connect a NRF24L01+ board and fit that into the case as well.

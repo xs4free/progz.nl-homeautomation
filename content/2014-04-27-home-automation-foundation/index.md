@@ -9,14 +9,14 @@ categories:
 - HomeAutomation
 tags: []
 resources:
-- src: Cubietruck-300x209.png
+- src: Cubietruck.png
   title: Cubietruck
 aliases:
 - index.php/2014/04/27/home-automation-foundation/
 ---
 Reading the [blog of Robert Hekkers](http://blog.hekkers.net/) I’ve read he started out using a PC running a single monolithic app developed in Delphi. Only recently he completed porting al his software from a PC to an ARM-based-board named [Cubieboard3](http://docs.cubieboard.org/products/start#cubietruck_cubieboard3) (aka Cubietruck). In my house there is a PC running 24/7 as a NAS, but I would like to keep things separate so I’m also going to use a Cubieboard.
 
-[caption id="attachment_17" align="aligncenter" width="300"][{{< img "Cubietruck-300x209.png" ""  "Cubietruck" >}}](https://www.progz.nl/homeautomation/wp-content/uploads/sites/2/2014/04/Cubietruck.png) Cubieboard 3 aka Cubietruck[/caption]
+[{{< img "Cubietruck.png" "Cubieboard 3 aka Cubietruck"  "Cubietruck" >}}](https://www.progz.nl/homeautomation/wp-content/uploads/sites/2/2014/04/Cubietruck.png)
 
 Robert Hekkers also switched his programming language from Delphi to [Node.js](http://nodejs.org/) when moving over to the Cubieboard. Since I don’t have any experience with Node.js but would love to learn, I see this as a great opportunity to start using something new, so I’m going to follow his example.
 
