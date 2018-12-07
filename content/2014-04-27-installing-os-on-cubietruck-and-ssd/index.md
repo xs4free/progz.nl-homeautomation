@@ -17,7 +17,8 @@ resources:
   title: PhoenixSuite-done
 - src: Lubuntu-need-upgrade.png
   title: Lubuntu-need-upgrade
-
+aliases:
+- index.php/2014/04/27/installing-os-on-cubietruck-and-ssd/
 ---
 Based on [Robert Hekkers experience with installing the Cubieboard3](http://blog.hekkers.net/2013/12/01/meet-the-cubietruck-aka-cubieboard3/), I download the latest Lubuntu server OS v1.02 image: [http://docs.cubieboard.org/tutorials/a20-cubietruck_lubuntu_server_releases](http://docs.cubieboard.org/tutorials/a20-cubietruck_lubuntu_server_releases)
 
