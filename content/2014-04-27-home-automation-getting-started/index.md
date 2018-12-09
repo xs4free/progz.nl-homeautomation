@@ -35,4 +35,5 @@ After following the [blog of Robert Hekkers](http://blog.hekkers.net/) for almos
 18.  Control windows opening/closing using motorized arms
 19.  Control a sliding-door into the backyard to let our cats in and out
 20.  Control front-door lock using RFID
+
 I know this is an ambitious list, and I know this is going to take quite some time. But that’s perfectly oké, it’s isn’t the destination that matters, it’s the journey that leads you there! Doing this will teach me more about electronics and micro-controllers, give me an opportunity to learn and use new programming languages and use new (software-) libraries. I’ve been a software developer for 13 years now and have always loved the combination of hardware and software. Let’s see where this project takes me.
