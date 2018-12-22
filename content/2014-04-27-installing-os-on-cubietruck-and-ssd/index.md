@@ -20,7 +20,7 @@ resources:
 aliases:
 - index.php/2014/04/installing-os-on-cubietruck-and-ssd/
 ---
-Based on [Robert Hekkers experience with installing the Cubieboard3](http://blog.hekkers.net/2013/12/01/meet-the-cubietruck-aka-cubieboard3/), I download the latest Lubuntu server OS v1.02 image: [http://docs.cubieboard.org/tutorials/a20-cubietruck_lubuntu_server_releases](http://docs.cubieboard.org/tutorials/a20-cubietruck_lubuntu_server_releases)
+Based on [Robert Hekkers experience with installing the Cubieboard3](http://blog.hekkers.net/2013/12/01/meet-the-cubietruck-aka-cubieboard3/), I downloaded the latest Lubuntu server OS v1.02 image: [http://docs.cubieboard.org/tutorials/a20-cubietruck_lubuntu_server_releases](http://docs.cubieboard.org/tutorials/a20-cubietruck_lubuntu_server_releases)
 
 I downloaded and installed the latest Phoenix Suite v1.06 for Windows using this download: [http://docs.cubieboard.org/tutorials/common/livesuit_installation_guide](http://docs.cubieboard.org/tutorials/common/livesuit_installation_guide)
 After starting the Phoenix Suite, I was asked if I wanted to install the upgrade to v1.08. I clicked “yes”. (btw, DON’T install this software on a VM-ware virtual machine, I couldn’t get a stable connection to the Cubieboard3 and as a result the flashing would not start)
