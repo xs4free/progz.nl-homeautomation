@@ -14,7 +14,7 @@ resources:
 aliases:
 - index.php/2014/04/home-automation-foundation/
 ---
-Reading the [blog of Robert Hekkers](http://blog.hekkers.net/) I’ve read he started out using a PC running a single monolithic app developed in Delphi. Only recently he completed porting al his software from a PC to an ARM-based-board named [Cubieboard3](http://docs.cubieboard.org/products/start#cubietruck_cubieboard3) (aka Cubietruck). In my house there is a PC running 24/7 as a NAS, but I would like to keep things separate so I’m also going to use a Cubieboard.
+In the [blog of Robert Hekkers](http://blog.hekkers.net/) he writes he started out using a PC running a single monolithic app developed in Delphi. He recently completed porting all his software from a PC to an ARM-based-board named [Cubieboard3](http://docs.cubieboard.org/products/start#cubietruck_cubieboard3) (aka Cubietruck). In my house there is a PC running 24/7 as a NAS, but I would like to keep things separate so I’m also going to use a Cubieboard.
 
 [{{< img "Cubietruck.png" "Cubieboard 3 aka Cubietruck"  "Cubietruck" >}}](https://www.progz.nl/homeautomation/wp-content/uploads/sites/2/2014/04/Cubietruck.png)
 
