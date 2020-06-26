@@ -2,8 +2,8 @@
 title: DIY Microsoft Teams presence led
 author: Rogier
 type: post
-date: 2020-05-06T21:11:56+01:00
-url: /2020/05/06/diy-microsoft-teams-presence-led/
+date: 2020-06-26T21:11:56+01:00
+url: /2020/06/26/diy-microsoft-teams-presence-led/
 commentFolder: 2020-06-05-diy-microsoft-teams-presence-led
 categories:
 - HomeAutomation
@@ -17,6 +17,8 @@ resources:
   title: Microsoft Teams presence led
 - src: diy-microsoft-teams-presence-led-3d-case.jpg
   title: Microsoft Teams presence led 3D case
+- src: teams-presence-publisher-screenshot.jpg
+  title: Microsoft Teams Presence Publisher screenshot  
 ---
 Since the outbreak of the Coronavirus (COVID-19) I've been working from home. I have a little daughter (age 5) who also had to stay home from school, so more than once I had the same situation as Professor Robert Kelly during a BBC interview:
 {{< youtube Mh4f9AYRCZY >}}
@@ -45,7 +47,7 @@ The filament is used to print a custom designed case, which consists of 2 pieces
 The software on the ESP32 is [ESPHome](https://esphome.io/) and configured with a relatively easy script:
 ```
 esphome:
-  name: overloop_status_lamp
+  name: teams_presence_led
   platform: ESP32
   board: esp32doit-devkit-v1
 
@@ -54,7 +56,7 @@ wifi:
   password: !secret wifi_password
 
   ap:
-    ssid: "Overloop Status Lamp"
+    ssid: "Teams Presence Led"
     password: !secret wifi_hotspot_password
 
 captive_portal:
@@ -79,30 +81,33 @@ light:
     id: "xringid"
 ```
 
-The script is also available in my GitHub repo.
+The script is also available in [my GitHub repo for this project](https://github.com/xs4free/MicrosoftTeamsPresenceLed).
 
-The above hardware isn't able to determine the Microsoft Teams presence by itself, it needs a companion app running on a Windows machine. I've created an very minimalistic Universal Windows Platform application using C# which polls the Microsoft Graph API every 15 seconds for the current presence. Based on the response it will sent message to the ESPHome API to change the color of the leds.
+The above hardware isn't able to determine the Microsoft Teams presence by itself, it needs a companion app running on a Windows machine. I've created an very minimalistic Windows application using C# and WPF which polls the Microsoft Graph API every 15 seconds for the presence of the signed in user. Based on the presence it will sent a message to the ESPHome API to change the color of the leds.
+
+{{< figure src="teams-presence-publisher-screenshot.jpg" alt="Microsoft Teams Presence Publisher screenshot" >}}
+
+The app also has the ability to publish your Microsoft Teams status to MQTT. I haven't extensively tested this feature, but I'm going to use it in the future with Home Assistant to also light up the led at night, as a night-light for my daughter.
+
+If you want to re-create this project, head on over to my [GitHub repo MicrosoftTeamsPresenceLed](https://github.com/xs4free/MicrosoftTeamsPresenceLed). There you can find all source-code, stl-files and the configuration script I used.
 
 [TODO]
-- Add screenshot of companion app
-- add links to GitHub repo for app/esphome config/stl files
 - check comment feature on my blog
-
+- add Fritzing diagram to show wire connections
 
 Future plans/possible improvements:
 - make the case smaller/less high (less printing/less weight)
-- downgrade the processor to an ESP8266 (cheaper)
+- try to downgrade the processor to an ESP8266 (cheaper)
 - use less leds, maybe one (?), and test how long this can run on a battery
 - add motion sensor to only light up when movement is detected
-- reprint shell with different filament to create a diffuser style shell
+- reprint shell with different filament/settings to create a diffuser style shell
 - improve UI of companion app
-- add companion app to Windows traybar instead of a window
 - make color configurable from companion app
-- upload companion app to Microsoft Store
+- [and more...](https://github.com/xs4free/MicrosoftTeamsPresenceLed/issues)
 
 Special thanks go out to:
-- Scott Hanselman for the initial idea and [blogpost](https://www.hanselman.com/blog/MirroringYourPresenceStatusFromTheMicrosoftGraphInTeamsToLIFXOrHueBiasLighting.aspx)
-- Isaac Levin for creating [a similar UWP app](https://github.com/isaacrlevin/PresenceLight?WT.mc_id=-blog-scottha) using off the shelve smart lightbulbs (LIFX and Philips Hue).
+- Scott Hanselman for sparking the initial idea and his [blogpost](https://www.hanselman.com/blog/MirroringYourPresenceStatusFromTheMicrosoftGraphInTeamsToLIFXOrHueBiasLighting.aspx)
+- Isaac Levin for creating [a very similar UWP app](https://github.com/isaacrlevin/PresenceLight?WT.mc_id=-blog-scottha) using off the shelve smart lightbulbs (LIFX and Philips Hue).
 - [ESPHome](https://esphome.io/) for their super easy and powerfull ESP software.
 - [EzGif.com](https://ezgif.com/) for creating the nice animated gif used in this blog.
 
