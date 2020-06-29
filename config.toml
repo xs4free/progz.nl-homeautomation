@@ -47,6 +47,17 @@ theme = "hyde-hyde"
     postNavigation = true
     relatedPosts = false #look at enabling includeNewer first: https://gohugo.io/content-management/related
 
+## comment settings
+[params.staticman]
+  # Sets Statiman to be active
+  staticman = true
+  #api      = "http://localhost:7071/api/PostComment"
+  api       = "https://static-comments-to-git.azurewebsites.net/api/PostComment"
+  akismet   = true
+
+[params.staticman.recaptcha]
+  sitekey = "6LegB4YUAAAAAJTBaaLSIIKgByn1psZ4vcr1sTMV"
+
 ## Social Accounts
 [params.social]
     github = "xs4free"
