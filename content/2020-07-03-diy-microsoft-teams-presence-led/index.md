@@ -2,9 +2,9 @@
 title: DIY Microsoft Teams presence led
 author: Rogier
 type: post
-date: 2020-06-26T21:11:56+01:00
-url: /2020/06/26/diy-microsoft-teams-presence-led/
-commentFolder: 2020-06-05-diy-microsoft-teams-presence-led
+date: 2020-07-03T11:11:56+01:00
+url: /2020/07/03/diy-microsoft-teams-presence-led/
+commentFolder: 2020-07-03-diy-microsoft-teams-presence-led
 categories:
 - HomeAutomation
 tags:
@@ -50,6 +50,9 @@ esphome:
   name: teams_presence_led
   platform: ESP32
   board: esp32doit-devkit-v1
+  on_boot:
+    then:
+      - light.turn_off: xringid
 
 wifi:
   ssid: !secret wifi_ssid
@@ -81,7 +84,7 @@ light:
     id: "xringid"
 ```
 
-The script is also available in [my GitHub repo for this project](https://github.com/xs4free/MicrosoftTeamsPresenceLed).
+The script is also available on [my GitHub repo for this project](https://github.com/xs4free/MicrosoftTeamsPresenceLed).
 
 The above hardware isn't able to determine the Microsoft Teams presence by itself, it needs a companion app running on a Windows machine. I've created an very minimalistic Windows application using C# and WPF which polls the Microsoft Graph API every 15 seconds for the presence of the signed in user. Based on the presence it will sent a message to the ESPHome API to change the color of the leds.
 
@@ -90,10 +93,6 @@ The above hardware isn't able to determine the Microsoft Teams presence by itsel
 The app also has the ability to publish your Microsoft Teams status to MQTT. I haven't extensively tested this feature, but I'm going to use it in the future with Home Assistant to also light up the led at night, as a night-light for my daughter.
 
 If you want to re-create this project, head on over to my [GitHub repo MicrosoftTeamsPresenceLed](https://github.com/xs4free/MicrosoftTeamsPresenceLed). There you can find all source-code, stl-files and the configuration script I used.
-
-[TODO]
-- check comment feature on my blog
-- add Fritzing diagram to show wire connections
 
 Future plans/possible improvements:
 - make the case smaller/less high (less printing/less weight)
@@ -110,4 +109,3 @@ Special thanks go out to:
 - Isaac Levin for creating [a very similar UWP app](https://github.com/isaacrlevin/PresenceLight?WT.mc_id=-blog-scottha) using off the shelve smart lightbulbs (LIFX and Philips Hue).
 - [ESPHome](https://esphome.io/) for their super easy and powerfull ESP software.
 - [EzGif.com](https://ezgif.com/) for creating the nice animated gif used in this blog.
-
