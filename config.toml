@@ -1,4 +1,4 @@
-baseurl = "https://www.progz.nl/blog"
+baseurl = "https://www.progz.nl/blog/"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
