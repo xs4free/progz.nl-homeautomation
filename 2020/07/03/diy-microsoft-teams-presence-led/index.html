@@ -1,15 +1,144 @@
-<!doctype html><html lang=en><head><link href=https://gmpg.org/xfn/11 rel=profile><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta http-equiv=cache-control content="public"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta name=generator content="Hugo 0.83.1"><title>DIY Microsoft Teams presence led • Rogier's blog</title><meta name=twitter:card content="summary"><meta name=twitter:title content="DIY Microsoft Teams presence led"><meta name=twitter:description content="Since the outbreak of the Coronavirus (COVID-19) I&rsquo;ve been working from home. I have a little daughter (age 5) who also had to stay home from school, so more than once I had the same situation as Professor Robert Kelly during a BBC interview:   Since I recently bought and build a 3D printer (Prusa i3 MK3S) and watched Scott Hanselman change his lights during his talk on Microsoft Build 2020, I put 1 and 1 together and decided to try and create something for myself/daughter."><meta property="og:title" content="DIY Microsoft Teams presence led"><meta property="og:description" content="Since the outbreak of the Coronavirus (COVID-19) I&rsquo;ve been working from home. I have a little daughter (age 5) who also had to stay home from school, so more than once I had the same situation as Professor Robert Kelly during a BBC interview:   Since I recently bought and build a 3D printer (Prusa i3 MK3S) and watched Scott Hanselman change his lights during his talk on Microsoft Build 2020, I put 1 and 1 together and decided to try and create something for myself/daughter."><meta property="og:type" content="article"><meta property="og:url" content="https://www.progz.nl/blog/2020/07/03/diy-microsoft-teams-presence-led/"><meta property="article:section" content><meta property="article:published_time" content="2020-07-03T11:11:56+01:00"><meta property="article:modified_time" content="2020-07-03T11:11:56+01:00"><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css><link rel=stylesheet href=/blog/scss/hyde-hyde.d7cc626740b38023e723cda62136d5aff453a39063225e8fbbf9fbcd3c583497.css integrity="sha256-18xiZ0CzgCPnI82mITbVr/RTo5BjIl6Pu/n7zTxYNJc="><link rel=stylesheet href=/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58+TzH3icCkSHGoJ+ed7w=" media=print><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script><script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]--><link rel=apple-touch-icon-precomposed sizes=144x144 href=/apple-touch-icon-144-precomposed.png><link rel="shortcut icon" href=/favicon.png></head><body class=theme-progz><div class=sidebar><div class=container><div class=sidebar-about><span class=site__title><a href=https://www.progz.nl/blog/>Rogier's blog</a></span><div class=author-image><img src=https://www.progz.nl/blog/img/Rogier-Reedijk.jpg alt="Author Image" class="img--circle img--headshot element--center"></div><p class=site__description></p></div><div class=collapsible-menu><input type=checkbox id=menuToggle>
-<label for=menuToggle>Rogier's blog</label><div class=menu-content><div><ul class=sidebar-nav><li><a href=/blog/about/><span>About</span></a></li></ul></div><section class=social><a href=https://twitter.com/xs4free rel=me><i class="fab fa-twitter fa-lg" aria-hidden=true></i></a>
+<!doctype html><html lang=en>
+<head>
+<link href=https://gmpg.org/xfn/11 rel=profile>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta http-equiv=cache-control content="public">
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name=generator content="Hugo 0.92.2">
+<title>DIY Microsoft Teams presence led • Rogier's blog</title>
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="DIY Microsoft Teams presence led">
+<meta name=twitter:description content="Since the outbreak of the Coronavirus (COVID-19) I&rsquo;ve been working from home. I have a little daughter (age 5) who also had to stay home from school, so more than once I had the same situation as Professor Robert Kelly during a BBC interview:   Since I recently bought and build a 3D printer (Prusa i3 MK3S) and watched Scott Hanselman change his lights during his talk on Microsoft Build 2020, I put 1 and 1 together and decided to try and create something for myself/daughter.">
+<meta property="og:title" content="DIY Microsoft Teams presence led">
+<meta property="og:description" content="Since the outbreak of the Coronavirus (COVID-19) I&rsquo;ve been working from home. I have a little daughter (age 5) who also had to stay home from school, so more than once I had the same situation as Professor Robert Kelly during a BBC interview:   Since I recently bought and build a 3D printer (Prusa i3 MK3S) and watched Scott Hanselman change his lights during his talk on Microsoft Build 2020, I put 1 and 1 together and decided to try and create something for myself/daughter.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.progz.nl/blog/2020/07/03/diy-microsoft-teams-presence-led/"><meta property="article:section" content>
+<meta property="article:published_time" content="2020-07-03T11:11:56+01:00">
+<meta property="article:modified_time" content="2020-07-03T11:11:56+01:00">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css>
+<link rel=stylesheet href=/blog/scss/hyde-hyde.6a56b4bd40328e9bbec465a6ad261c1fe4adf85e75e716e1fc3e80ae6363b6cc.css integrity="sha256-ala0vUAyjpu+xGWmrSYcH+St+F515xbh/D6ArmNjtsw=">
+<link rel=stylesheet href=/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58+TzH3icCkSHGoJ+ed7w=" media=print><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script>
+<script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]-->
+<link rel=apple-touch-icon-precomposed sizes=144x144 href=/apple-touch-icon-144-precomposed.png>
+<link rel="shortcut icon" href=/favicon.png>
+</head>
+<body class=theme-progz>
+<div class=sidebar>
+<div class=container>
+<div class=sidebar-about>
+<span class=site__title>
+<a href=https://www.progz.nl/blog/>Rogier's blog</a>
+</span>
+<div class=author-image>
+<img src=https://www.progz.nl/blog/img/Rogier-Reedijk.jpg alt="Author Image" class="img--circle img--headshot element--center">
+</div>
+<p class=site__description>
+</p>
+</div>
+<div class=collapsible-menu>
+<input type=checkbox id=menuToggle>
+<label for=menuToggle>Rogier's blog</label>
+<div class=menu-content>
+<div>
+<ul class=sidebar-nav>
+<li>
+<a href=/blog/about/>
+<span>About</span>
+</a>
+</li>
+</ul>
+</div>
+<section class=social>
+<a href=https://twitter.com/xs4free rel=me><i class="fab fa-twitter fa-lg" aria-hidden=true></i></a>
 <a href=https://facebook.com/rogier.reedijk rel=me><i class="fab fa-facebook-f"></i></a>
 <a href=https://github.com/xs4free rel=me><i class="fab fa-github fa-lg" aria-hidden=true></i></a>
-<a href=https://linkedin.com/in/rogierreedijk rel=me><i class="fab fa-linkedin fa-lg" aria-hidden=true></i></a></section></div></div><div class=copyright>&copy; 2021 Rogier Reedijk
-<a href=https://creativecommons.org/licenses/by-sa/4.0>CC BY-SA 4.0</a></div><div class=builtwith>Built with <a href=https://gohugo.io>Hugo</a> ❤️ <a href=https://github.com/htr3n/hyde-hyde>hyde-hyde</a>.</div></div></div><div class="content container"><article><header><h1>DIY Microsoft Teams presence led</h1><div class=post__meta><i class="fas fa-calendar-alt"></i> Jul 3, 2020
+<a href=https://linkedin.com/in/rogierreedijk rel=me><i class="fab fa-linkedin fa-lg" aria-hidden=true></i></a>
+</section>
+</div>
+</div>
+<div class=copyright>
+&copy; 2022 Rogier Reedijk
+<a href=https://creativecommons.org/licenses/by-sa/4.0>CC BY-SA 4.0</a>
+</div>
+<div class=builtwith>
+Built with <a href=https://gohugo.io>Hugo</a> ❤️ <a href=https://github.com/htr3n/hyde-hyde>hyde-hyde</a>.
+</div>
+</div>
+</div>
+<div class="content container">
+<article>
+<header>
+<h1>DIY Microsoft Teams presence led</h1>
+<div class=post__meta>
+<i class="fas fa-calendar-alt"></i> Jul 3, 2020
 in
-<a class="badge badge-category" href=/blog/categories/homeautomation>HOMEAUTOMATION</a><br><i class="fas fa-tags"></i>
+<a class="badge badge-category" href=/blog/categories/homeautomation>HOMEAUTOMATION</a>
+<br>
+<i class="fas fa-tags"></i>
 <a class="badge badge-tag" href=/blog/tags/esp32>esp32</a>
 <a class="badge badge-tag" href=/blog/tags/esphome>esphome</a>
 <a class="badge badge-tag" href=/blog/tags/.net>.net</a>
-<a class="badge badge-tag" href=/blog/tags/mqtt>mqtt</a><br><i class="fas fa-clock"></i> 3 min read</div></header><div class=post><p>Since the outbreak of the Coronavirus (COVID-19) I&rsquo;ve been working from home. I have a little daughter (age 5) who also had to stay home from school, so more than once I had the same situation as Professor Robert Kelly during a BBC interview:<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube.com/embed/Mh4f9AYRCZY style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div></p><p>Since I recently bought and build a 3D printer (<a href=https://shop.prusa3d.com/en/3d-printers/180-original-prusa-i3-mk3-kit.html>Prusa i3 MK3S</a>) and watched <a href=https://www.hanselman.com/blog/MirroringYourPresenceStatusFromTheMicrosoftGraphInTeamsToLIFXOrHueBiasLighting.aspx>Scott Hanselman change his lights</a> during his talk on Microsoft Build 2020, I put 1 and 1 together and decided to try and create something for myself/daughter. My goal was to create a led-light, that I can put on the wall besides my office door, that changes color following my <a href=https://www.microsoft.com/microsoft-365/microsoft-teams/group-chat-software>Microsoft Teams</a> presence status (since that&rsquo;s the tool I use for meetings/video-calls all day).</p><p>The end result after 3 nights of tinkering looks like this:<figure><img src=animated-microsoft-teams-presence-led.gif alt="Microsoft Teams presence led"></figure></p><p>The hardware side is made from:</p><table><thead><tr><th style=text-align:left>Part name</th><th style=text-align:right>Cost (incl. shipping)</th></tr></thead><tbody><tr><td style=text-align:left><a href=http://s.click.aliexpress.com/e/_dZ9rhiK>ESP32 DevKit v1</a></td><td style=text-align:right>€4,33</td></tr><tr><td style=text-align:left><a href=https://www.hobbyelectronica.nl/product/x-ring-12-bits-ws2812b-rgb-led-ring/>X-Ring WS2812b RGB-led-ring 12 leds</a> or <a href=http://s.click.aliexpress.com/e/_d6X38lU>this on AliExpress</a></td><td style=text-align:right>€2,35</td></tr><tr><td style=text-align:left>9.7m of <a href=http://s.click.aliexpress.com/e/_dXyPbR8>black PETG filament</a> for the base (€19,92 for 300m)</td><td style=text-align:right>€0.65</td></tr><tr><td style=text-align:left>10.5m of <a href=http://s.click.aliexpress.com/e/_dXhk574>transparant PETG filament</a> for the shell (€19.52 for 300m)</td><td style=text-align:right>€0.68</td></tr><tr><td style=text-align:left>3 <a href=http://s.click.aliexpress.com/e/_d9esM4w>female-to-female DuPont jumper wires</a> (€1.09 for 40pcs)</td><td style=text-align:right>€0.08</td></tr><tr><td style=text-align:left>(old) phone charger with mini-USB connector (0.7A at 5V)</td><td style=text-align:right>-</td></tr><tr><td style=text-align:left></td><td style=text-align:right>Total: <strong>€8,09</strong></td></tr></tbody></table><figure><img src=diy-microsoft-teams-presence-led-3d-case.jpg alt="Microsoft Teams presence led 3D case"></figure><p>The filament is used to print a custom designed case, which consists of 2 pieces that hold the ESP32 and the RGB-led-ring. They slide nicely over each other and lock together at the USB opening. The case can be viewed/downloaded at <a href=https://a360.co/3gYzPql>Autodesk Fusion 360 - Team Presence Light</a> or <a href=https://www.thingiverse.com/thing:4434525>Thingiverse - Teams Presence Led</a>.</p><p>The software on the ESP32 is <a href=https://esphome.io/>ESPHome</a> and configured with a relatively easy script:</p><pre><code>esphome:
+<a class="badge badge-tag" href=/blog/tags/mqtt>mqtt</a>
+<br>
+<i class="fas fa-clock"></i> 3 min read
+</div>
+</header>
+<div class=post>
+<p>Since the outbreak of the Coronavirus (COVID-19) I&rsquo;ve been working from home. I have a little daughter (age 5) who also had to stay home from school, so more than once I had the same situation as Professor Robert Kelly during a BBC interview:
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube.com/embed/Mh4f9AYRCZY style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<p>Since I recently bought and build a 3D printer (<a href=https://shop.prusa3d.com/en/3d-printers/180-original-prusa-i3-mk3-kit.html>Prusa i3 MK3S</a>) and watched <a href=https://www.hanselman.com/blog/MirroringYourPresenceStatusFromTheMicrosoftGraphInTeamsToLIFXOrHueBiasLighting.aspx>Scott Hanselman change his lights</a> during his talk on Microsoft Build 2020, I put 1 and 1 together and decided to try and create something for myself/daughter. My goal was to create a led-light, that I can put on the wall besides my office door, that changes color following my <a href=https://www.microsoft.com/microsoft-365/microsoft-teams/group-chat-software>Microsoft Teams</a> presence status (since that&rsquo;s the tool I use for meetings/video-calls all day).</p>
+<p>The end result after 3 nights of tinkering looks like this:
+<figure><img src=animated-microsoft-teams-presence-led.gif alt="Microsoft Teams presence led">
+</figure>
+</p>
+<p>The hardware side is made from:</p>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Part name</th>
+<th style=text-align:right>Cost (incl. shipping)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><a href=http://s.click.aliexpress.com/e/_dZ9rhiK>ESP32 DevKit v1</a></td>
+<td style=text-align:right>€4,33</td>
+</tr>
+<tr>
+<td style=text-align:left><a href=https://www.hobbyelectronica.nl/product/x-ring-12-bits-ws2812b-rgb-led-ring/>X-Ring WS2812b RGB-led-ring 12 leds</a> or <a href=http://s.click.aliexpress.com/e/_d6X38lU>this on AliExpress</a></td>
+<td style=text-align:right>€2,35</td>
+</tr>
+<tr>
+<td style=text-align:left>9.7m of <a href=http://s.click.aliexpress.com/e/_dXyPbR8>black PETG filament</a> for the base (€19,92 for 300m)</td>
+<td style=text-align:right>€0.65</td>
+</tr>
+<tr>
+<td style=text-align:left>10.5m of <a href=http://s.click.aliexpress.com/e/_dXhk574>transparant PETG filament</a> for the shell (€19.52 for 300m)</td>
+<td style=text-align:right>€0.68</td>
+</tr>
+<tr>
+<td style=text-align:left>3 <a href=http://s.click.aliexpress.com/e/_d9esM4w>female-to-female DuPont jumper wires</a> (€1.09 for 40pcs)</td>
+<td style=text-align:right>€0.08</td>
+</tr>
+<tr>
+<td style=text-align:left>(old) phone charger with mini-USB connector (0.7A at 5V)</td>
+<td style=text-align:right>-</td>
+</tr>
+<tr>
+<td style=text-align:left></td>
+<td style=text-align:right>Total: <strong>€8,09</strong></td>
+</tr>
+</tbody>
+</table>
+<figure><img src=diy-microsoft-teams-presence-led-3d-case.jpg alt="Microsoft Teams presence led 3D case">
+</figure>
+<p>The filament is used to print a custom designed case, which consists of 2 pieces that hold the ESP32 and the RGB-led-ring. They slide nicely over each other and lock together at the USB opening. The case can be viewed/downloaded at <a href=https://a360.co/3gYzPql>Autodesk Fusion 360 - Team Presence Light</a> or <a href=https://www.thingiverse.com/thing:4434525>Thingiverse - Teams Presence Led</a>.</p>
+<p>The software on the ESP32 is <a href=https://esphome.io/>ESPHome</a> and configured with a relatively easy script:</p>
+<pre tabindex=0><code>esphome:
   name: teams_presence_led
   platform: ESP32
   board: esp32doit-devkit-v1
@@ -45,10 +174,120 @@ light:
     method: ESP32_I2S_1
     name: &quot;xringname&quot;    
     id: &quot;xringid&quot;
-</code></pre><p>The script is also available on <a href=https://github.com/xs4free/MicrosoftTeamsPresenceLed>my GitHub repo for this project</a>.</p><p>The above hardware isn&rsquo;t able to determine the Microsoft Teams presence by itself, it needs a companion app running on a Windows machine. I&rsquo;ve created an very minimalistic Windows application using C# and WPF which polls the Microsoft Graph API every 15 seconds for the presence of the signed in user. Based on the presence it will sent a message to the ESPHome API to change the color of the leds.</p><figure><img src=teams-presence-publisher-screenshot.jpg alt="Microsoft Teams Presence Publisher screenshot"></figure><p>The app also has the ability to publish your Microsoft Teams status to MQTT. I haven&rsquo;t extensively tested this feature, but I&rsquo;m going to use it in the future with Home Assistant to also light up the led at night, as a night-light for my daughter.</p><p>If you want to re-create this project, head on over to my <a href=https://github.com/xs4free/MicrosoftTeamsPresenceLed>GitHub repo MicrosoftTeamsPresenceLed</a>. There you can find all source-code, stl-files and the configuration script I used.</p><p>Future plans/possible improvements:</p><ul><li>make the case smaller/less high (less printing/less weight)</li><li>try to downgrade the processor to an ESP8266 (cheaper)</li><li>use less leds, maybe one (?), and test how long this can run on a battery</li><li>add motion sensor to only light up when movement is detected</li><li>reprint shell with different filament/settings to create a diffuser style shell</li><li>improve UI of companion app</li><li>make color configurable from companion app</li><li><a href=https://github.com/xs4free/MicrosoftTeamsPresenceLed/issues>and more&mldr;</a></li></ul><p>Special thanks go out to:</p><ul><li>Scott Hanselman for sparking the initial idea and his <a href=https://www.hanselman.com/blog/MirroringYourPresenceStatusFromTheMicrosoftGraphInTeamsToLIFXOrHueBiasLighting.aspx>blogpost</a></li><li>Isaac Levin for creating <a href="https://github.com/isaacrlevin/PresenceLight?WT.mc_id=-blog-scottha">a very similar UWP app</a> using off the shelve smart lightbulbs (LIFX and Philips Hue).</li><li><a href=https://esphome.io/>ESPHome</a> for their super easy and powerfull ESP software.</li><li><a href=https://ezgif.com/>EzGif.com</a> for creating the nice animated gif used in this blog.</li></ul></div><div class="navigation navigation-single"><a href=https://www.progz.nl/blog/2016/11/25/getting-started-with-mysensors/ class=navigation-next><span class=navigation-tittle>Getting started with MySensors</span>
-<i aria-hidden=true class="fa fa-chevron-right"></i></a></div><section class=comments-area><a id=comments></a><h3><i class="fas fa-comment-alt"></i> 1 replies on “DIY Microsoft Teams presence led”</h3><ol><li><article id=comment-ba84ac1e-9acb-4c4b-8088-5629bd310add><div class=d-flex><div><img class=avatar src="https://secure.gravatar.com/avatar/C4F30597E8F15FDE8BE8A08AB041EA95?s=100&d=mm&r=g"></div><div><div class=author>Arno Stolk
-<a id=ba84ac1e-9acb-4c4b-8088-5629bd310add href=#comment-form onclick="changeValue('fields[replyTo]','ba84ac1e-9acb-4c4b-8088-5629bd310add')" aria-label="Reply to Arno Stolk"><i class="fas fa-reply"></i> reply</a></div><small><a href=#comment-ba84ac1e-9acb-4c4b-8088-5629bd310add title="Link to this reply"><time>Wednesday 2 Dec 2020 om 08:49:47</time></a></small><p>Really fun to Google for exactly this and then stumble upon your Blogpost, Rogier. I&rsquo;m still new to 3d printing and electronics projects so this might be a little complicated, but nice post!!</p></div></div></article><ol class=children></ol><hr class=blog-seperator></li></ol><section class="js-comments staticman-comments"><a id=comment-form></a><h3>Your reply</h3><form class="js-form form form-horizontal" method=post action=https://static-comments-to-git.azurewebsites.net/api/PostComment><input type=hidden name=options[slug] value=2020-07-03-diy-microsoft-teams-presence-led/>
+</code></pre><p>The script is also available on <a href=https://github.com/xs4free/MicrosoftTeamsPresenceLed>my GitHub repo for this project</a>.</p>
+<p>The above hardware isn&rsquo;t able to determine the Microsoft Teams presence by itself, it needs a companion app running on a Windows machine. I&rsquo;ve created an very minimalistic Windows application using C# and WPF which polls the Microsoft Graph API every 15 seconds for the presence of the signed in user. Based on the presence it will sent a message to the ESPHome API to change the color of the leds.</p>
+<figure><img src=teams-presence-publisher-screenshot.jpg alt="Microsoft Teams Presence Publisher screenshot">
+</figure>
+<p>The app also has the ability to publish your Microsoft Teams status to MQTT. I haven&rsquo;t extensively tested this feature, but I&rsquo;m going to use it in the future with Home Assistant to also light up the led at night, as a night-light for my daughter.</p>
+<p>If you want to re-create this project, head on over to my <a href=https://github.com/xs4free/MicrosoftTeamsPresenceLed>GitHub repo MicrosoftTeamsPresenceLed</a>. There you can find all source-code, stl-files and the configuration script I used.</p>
+<p>Future plans/possible improvements:</p>
+<ul>
+<li>make the case smaller/less high (less printing/less weight)</li>
+<li>try to downgrade the processor to an ESP8266 (cheaper)</li>
+<li>use less leds, maybe one (?), and test how long this can run on a battery</li>
+<li>add motion sensor to only light up when movement is detected</li>
+<li>reprint shell with different filament/settings to create a diffuser style shell</li>
+<li>improve UI of companion app</li>
+<li>make color configurable from companion app</li>
+<li><a href=https://github.com/xs4free/MicrosoftTeamsPresenceLed/issues>and more&mldr;</a></li>
+</ul>
+<p>Special thanks go out to:</p>
+<ul>
+<li>Scott Hanselman for sparking the initial idea and his <a href=https://www.hanselman.com/blog/MirroringYourPresenceStatusFromTheMicrosoftGraphInTeamsToLIFXOrHueBiasLighting.aspx>blogpost</a></li>
+<li>Isaac Levin for creating <a href="https://github.com/isaacrlevin/PresenceLight?WT.mc_id=-blog-scottha">a very similar UWP app</a> using off the shelve smart lightbulbs (LIFX and Philips Hue).</li>
+<li><a href=https://esphome.io/>ESPHome</a> for their super easy and powerfull ESP software.</li>
+<li><a href=https://ezgif.com/>EzGif.com</a> for creating the nice animated gif used in this blog.</li>
+</ul>
+</div>
+<div class="navigation navigation-single">
+<a href=https://www.progz.nl/blog/2016/11/25/getting-started-with-mysensors/ class=navigation-next>
+<span class=navigation-tittle>Getting started with MySensors</span>
+<i aria-hidden=true class="fa fa-chevron-right"></i>
+</a>
+</div>
+<section class=comments-area>
+<a id=comments></a>
+<h3><i class="fas fa-comment-alt"></i> 1 replies on “DIY Microsoft Teams presence led”</h3>
+<ol>
+<li>
+<article id=comment-ba84ac1e-9acb-4c4b-8088-5629bd310add>
+<div class=d-flex>
+<div>
+<img class=avatar src="https://secure.gravatar.com/avatar/C4F30597E8F15FDE8BE8A08AB041EA95?s=100&d=mm&r=g">
+</div>
+<div>
+<div class=author>
+Arno Stolk
+<a id=ba84ac1e-9acb-4c4b-8088-5629bd310add href=#comment-form onclick="changeValue('fields[replyTo]','ba84ac1e-9acb-4c4b-8088-5629bd310add')" aria-label="Reply to Arno Stolk">
+<i class="fas fa-reply"></i> reply
+</a>
+</div>
+<small>
+<a href=#comment-ba84ac1e-9acb-4c4b-8088-5629bd310add title="Link to this reply">
+<time>Wednesday 2 Dec 2020 om 08:49:47</time>
+</a>
+</small>
+<p>Really fun to Google for exactly this and then stumble upon your Blogpost, Rogier. I&rsquo;m still new to 3d printing and electronics projects so this might be a little complicated, but nice post!!</p>
+</div>
+</div>
+</article>
+<ol class=children>
+</ol>
+<hr class=blog-seperator>
+</li>
+</ol>
+<section class="js-comments staticman-comments">
+<a id=comment-form></a>
+<h3>Your reply</h3>
+<form class="js-form form form-horizontal" method=post action=https://static-comments-to-git.azurewebsites.net/api/PostComment>
+<input type=hidden name=options[slug] value=2020-07-03-diy-microsoft-teams-presence-led/>
 <input type=hidden name=options[origin] value=https://www.progz.nl/blog/2020/07/03/diy-microsoft-teams-presence-led/>
 <input type=hidden name=options[reCaptcha][siteKey] value=6LegB4YUAAAAAJTBaaLSIIKgByn1psZ4vcr1sTMV>
-<input type=hidden name=fields[replyTo] value=0><div class="form-group row"><label for=reply-body class="col-sm-2 col-form-label">Reply</label><div class=col-sm-10><textarea name=fields[body] id=reply-body type=text placeholder="Your reply." class=form-control aria-describedby=useMarkdown></textarea><p id=useMarkdown class="form-text text-muted markdown-notice">You can use <a href=https://nl.wikipedia.org/wiki/Markdown>MarkDown</a> to format your reply.</p></div></div><div class="form-group row"><label for=reply-name class="col-sm-2 col-form-label">Name</label><div class=col-sm-10><input name=fields[name] id=reply-name type=text placeholder="Your name"></div></div><div class="form-group row"><label for=reply-email class="col-sm-2 col-form-label">Email</label><div class=col-sm-10><input name=fields[email] id=reply-email type=email placeholder="Your email-address"></div></div><input type=hidden name=options[reCaptcha][token] id=recaptcha_token data-sitekey=6LegB4YUAAAAAJTBaaLSIIKgByn1psZ4vcr1sTMV><div class="form-group row"><div class=col-sm-12><button type=submit class="btn btn-primary">
-Send reply <i class="fa fa-circle-notch fa-spin hide"></i></button><p id=askismet class="form-text text-muted akismet_notice">This website uses Akismet to reduce spam. <a href=https://akismet.com/privacy/ target=_blank rel="nofollow noopener external">Read how your reply will be processed</a>.</p><p class="submit-errors hide">Something went wrong while sending your reply. Please try again.</p></div></div></form><div class="submit-succeeded hide">Thanks for your reply! It will be shown as soon as it's been approved.</div></section></section></article></div><script defer src=https://use.fontawesome.com/releases/v5.11.2/js/all.js integrity=sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1 crossorigin=anonymous></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js></script><script type=text/javascript>hljs.initHighlightingOnLoad()</script><script src="https://www.google.com/recaptcha/api.js?render=6LegB4YUAAAAAJTBaaLSIIKgByn1psZ4vcr1sTMV"></script><script src=https://code.jquery.com/jquery-3.3.1.min.js crossorigin=anonymous></script><script src=https://www.progz.nl/blog/js/staticman.js></script></body></html>
+<input type=hidden name=fields[replyTo] value=0>
+<div class="form-group row">
+<label for=reply-body class="col-sm-2 col-form-label">Reply</label>
+<div class=col-sm-10>
+<textarea name=fields[body] id=reply-body type=text placeholder="Your reply." class=form-control aria-describedby=useMarkdown></textarea>
+<p id=useMarkdown class="form-text text-muted markdown-notice">You can use <a href=https://nl.wikipedia.org/wiki/Markdown>MarkDown</a> to format your reply.</p>
+</div>
+</div>
+<div class="form-group row">
+<label for=reply-name class="col-sm-2 col-form-label">Name</label>
+<div class=col-sm-10>
+<input name=fields[name] id=reply-name type=text placeholder="Your name">
+</div>
+</div>
+<div class="form-group row">
+<label for=reply-email class="col-sm-2 col-form-label">Email</label>
+<div class=col-sm-10>
+<input name=fields[email] id=reply-email type=email placeholder="Your email-address">
+</div>
+</div>
+<input type=hidden name=options[reCaptcha][token] id=recaptcha_token data-sitekey=6LegB4YUAAAAAJTBaaLSIIKgByn1psZ4vcr1sTMV>
+<div class="form-group row">
+<div class=col-sm-12>
+<button type=submit class="btn btn-primary">
+Send reply <i class="fa fa-circle-notch fa-spin hide"></i>
+</button>
+<p id=askismet class="form-text text-muted akismet_notice">This website uses Akismet to reduce spam. <a href=https://akismet.com/privacy/ target=_blank rel="nofollow noopener external">Read how your reply will be processed</a>.</p>
+<p class="submit-errors hide">
+Something went wrong while sending your reply. Please try again.
+</p>
+</div>
+</div>
+</form>
+<div class="submit-succeeded hide">
+Thanks for your reply! It will be shown as soon as it's been approved.
+</div>
+</section>
+</section>
+</article>
+</div>
+<script defer src=https://use.fontawesome.com/releases/v5.11.2/js/all.js integrity=sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1 crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js></script>
+<script type=text/javascript>hljs.initHighlightingOnLoad()</script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LegB4YUAAAAAJTBaaLSIIKgByn1psZ4vcr1sTMV"></script>
+<script src=https://code.jquery.com/jquery-3.3.1.min.js crossorigin=anonymous></script>
+<script src=https://www.progz.nl/blog/js/staticman.js></script>
+</body>
+</html>
