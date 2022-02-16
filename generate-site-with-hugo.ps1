@@ -1,5 +1,5 @@
 Param(
-    [string] $hugoUri = "https://github.com/gohugoio/hugo/releases/download/v0.51/hugo_extended_0.51_Windows-64bit.zip",
+    [string] $hugoUri = "https://github.com/gohugoio/hugo/releases/download/v0.92.2/hugo_extended_0.92.2_Windows-64bit.zip",
     [string] $destinationFolder = ".\public"
 )
 
@@ -21,7 +21,7 @@ if (-Not(Test-Path $hugoZip))
     # https://stackoverflow.com/questions/41618766/powershell-invoke-webrequest-fails-with-ssl-tls-secure-channel
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-    wget $hugoUri -OutFile $hugoZip
+    Invoke-WebRequest -Uri $hugoUri -OutFile $hugoZip
 }
 
 if (-Not(Test-Path $hugoExe))
