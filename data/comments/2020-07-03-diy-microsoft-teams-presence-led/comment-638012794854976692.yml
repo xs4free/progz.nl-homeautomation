@@ -1,0 +1,9 @@
+id: 16c8fd3a-11ec-4ae1-aa19-fb340645ecae
+replyTo: 0
+name: "Bennett"
+email: 51E77F50855AE1C55072F9CD3A24A80D
+body: "I thoroughly enjoyed reproducing this setup. It was a needed addition to my home office, so an immense thank you for detailing these steps.
+
+I realize this is now a few years after your original post, but being a novice coder I have not had any luck finding an answer that I can implement--do you know if the MS Graph API provides any way to determine whether the webcam is in use during a Teams meeting/call? Or perhaps there is another method of detecting device (i.e., webcam) status? It would be handy to update the LED based on a video call vs a simple audio call."
+date: 2022-10-13T17:38:05.4976692+00:00
+slug: 2020-07-03-diy-microsoft-teams-presence-led/
